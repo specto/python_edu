@@ -1,21 +1,26 @@
-braces = []
-end_braces = []
+from datetime import datetime
 
-with open("library.bib", "r") as library_file:
-    brace_count = 0
-    in_brace = False
-    for line in library_file:
-        for char in line:
-            if char == '{':
-                brace_count += 1
-            elif char == '}':
-                brace_count -= 1
-            if not in_brace and brace_count == 1:
-                braces.append('+')
-                in_brace = True
-            if in_brace and brace_count == 0:
-                end_braces.append('-')
-                in_brace = False
+records = [{
+    'author': 'Ilia',
+    'date_created': datetime.now(),
+    'title': 'Magnum opus',
+    'description': 'bla bla',
+    'pages': [
+        'Lorem ipsum',
+        'asdfasdf asdf asdf asfd',
+        'asdf asdfa sdfa sdf',
+    ],
+}, {
+    'author': 'Boyan',
+    'date_created': datetime.now(),
+    'title': 'Diplomna rabota',
+    'description': 'bla bla',
+    'pages': [
+        'Shellcode',
+        'bla bla shellcode bla bla',
+        'asdf asdfa sdfa sdf',
+    ],
+}]
 
-print(len(braces), len(end_braces))
-# print(brace_count)
+for record in records:
+    print(record['title'])
