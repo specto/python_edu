@@ -14,7 +14,7 @@ Warning: Some parameters must be configured for some parts to be fully working.
 Contents
 ---
 
-### [Part 1 Bibtex file parser](blob/master/part%201)
+### [Part 1 Bibtex file parser](part%201)
 
-### [Part 2 Discord bot and network presence tracker](blob/master/part%202)
+### [Part 2 Discord bot and network presence tracker](part%202)
 
