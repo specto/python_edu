@@ -18,3 +18,5 @@ Contents
 
 ### [Part 2 Discord bot and network presence tracker](part%202)
 
+### [Part 3 Generate pdf from simple database for entomology label printing](part%203)
+
