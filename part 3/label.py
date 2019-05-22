@@ -35,6 +35,7 @@ def generate_pdf_with_labels():
         con.execute("UPDATE labels SET is_printed = ? WHERE id = ?", (1, d[0],))
     con.commit()
 
+
 if __name__ == '__main__':
     # 1. Create our database
     # create_db()

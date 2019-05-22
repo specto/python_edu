@@ -27,9 +27,7 @@ def get_macs():
     # remove pointless text
     lines = lines[2:-3]
 
-    macs = [line.split('\t')[1] for line in lines]
-
-    return macs
+    return [line.split('\t')[1] for line in lines]
 
 
 @app.route("/who/")

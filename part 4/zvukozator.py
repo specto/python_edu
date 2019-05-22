@@ -46,4 +46,3 @@ if __name__ == "__main__":  # Only if our file is executed directly
     finally:
         # Aknowledge end with a long beep
         winsound.Beep(440, 1000)
-
